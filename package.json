@@ -1,0 +1,40 @@
+{
+  "name": "freecodecamp-timestamp-microservice",
+  "version": "1.0.0",
+  "description": "> timestamp micro service: [link](https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/timestamp-microservice)",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_CONFIG_ENV=dev ts-node-dev src/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "directories": {
+    "lib": "src",
+    "test": "test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairekuo0913/freeCodeCamp-timestamp-microservice.git"
+  },
+  "keywords": [
+    "freecodecamp"
+  ],
+  "author": "Claire Kuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clairekuo0913/freeCodeCamp-timestamp-microservice/issues"
+  },
+  "homepage": "https://github.com/clairekuo0913/freeCodeCamp-timestamp-microservice#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "eslint": "^8.13.0",
+    "ts-node-dev": "^1.1.8"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "path": "^0.12.7"
+  }
+}
