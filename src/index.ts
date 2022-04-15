@@ -32,7 +32,7 @@ app.get('/api/:mili(\\d+)', (req, res) => {
 app.get('/api/:date?', (req, res) => {
   if (req.params.date == null) {
     let date = new Date();
-    date.setMinutes(date.getMinutes()+217);
+    date.setMinutes(date.getMinutes());
     res.json({
       unix: date.valueOf(),
       utc: date.toUTCString()
@@ -57,4 +57,4 @@ const port = process.env.PORT || 3000;
 const listener = app.listen(port, () => {
   const address = listener.address() as any;
   console.log('Your app is listening on port '+ address.port);
-})
+});
